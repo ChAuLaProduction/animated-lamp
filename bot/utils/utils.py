@@ -255,10 +255,10 @@ class Utilities:
 
         if as_file:
             as_file_btn.append(
-                InlineKeyboardButton("📁 Uploading as Document.", "set+af")
+                InlineKeyboardButton("Uploading as Document.", "set+af")
             )
         else:
-            as_file_btn.append(InlineKeyboardButton("🖼️ Uploading as Image.", "set+af"))
+            as_file_btn.append(InlineKeyboardButton("Uploading as Image.", "set+af"))
 
         if watermark_text:
             wm_btn.append(InlineKeyboardButton(f"{watermark_text}", "set+wm"))
@@ -298,5 +298,5 @@ class Utilities:
                 btns.append(i_keyboard)
         btns.append([InlineKeyboardButton("Manual Screenshots!", "mscht")])
         btns.append([InlineKeyboardButton("Trim Video!", "trim")])
-        btns.append([InlineKeyboardButton("Get Media Information", "mi")])
+        btns.append([InlineKeyboardButton("Media Information", "mi")])
         return btns
